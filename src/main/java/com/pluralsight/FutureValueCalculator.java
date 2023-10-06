@@ -22,8 +22,9 @@ public class FutureValueCalculator {
         double total = deposit * Math.pow(interest + 1 , years);
 
         double totalinterest = total - deposit;
-        System.out.println(total);
-        System.out.println(totalinterest);
+        System.out.printf("Your total is: %.2f" , total);
+        System.out.println();
+        System.out.printf("Your total interest is: %.2f" ,totalinterest);
         myScanner.close();
     }
 }
